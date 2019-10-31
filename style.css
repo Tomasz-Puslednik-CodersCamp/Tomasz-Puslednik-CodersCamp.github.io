@@ -18,7 +18,7 @@ h2 {
     font-size: 18pt;
 }
 
-p, a {
+p, a, em {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 12pt;
 }
@@ -26,8 +26,7 @@ p, a {
 /* Konfiguracja CSS Grid */
 .grid-container {
     display: grid;
-    /* grid-template-columns: repeat(6, auto); */
-    grid-template-columns: repeat(auto-fit, minmax(1fr, 6fr));
+    grid-template-columns: repeat(6, auto);
     grid-gap: 8pt;
     padding: 8pt 8pt;
 }
@@ -79,6 +78,61 @@ p, a {
     text-align: center;
 }
 
+.item-header h1 span:nth-child(0) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 0ms;
+}
+
+.item-header h1 span:nth-child(1) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 50ms;
+}
+
+.item-header h1 span:nth-child(2) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 100ms;
+}
+
+.item-header h1 span:nth-child(3) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 150ms;
+}
+
+.item-header h1 span:nth-child(4) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 200ms;
+}
+
+.item-header h1 span:nth-child(5) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 250ms;
+}
+
+.item-header h1 span:nth-child(6) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 300ms;
+}
+
+.item-header h1 span:nth-child(7) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 350ms;
+}
+
+.item-header h1 span:nth-child(8) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 400ms;
+}
+
+.item-header h1 span:nth-child(9) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 450ms;
+}
+
+.item-header h1 span:nth-child(10) {
+    animation: drop-from-above 1s ease-in-out;
+    animation-delay: 500ms;
+}
+
 .item-header p {
     font-family: 'VT323', monospace;
     font-size: 24pt;
@@ -88,4 +142,19 @@ p, a {
 .item-footer p, a {
     font-size: 8pt;
     text-align: center;
+}
+
+@keyframes drop-from-above {
+    0% {
+        color: hsla(0, 50%, 50%, 0);
+        transform: translateY(-50px);
+    }
+
+    70% {
+        color: hsla(0, 47%, 47%, 1);
+    }
+
+    100% {
+        color: hsla(0, 0%, 0%, 1);
+    }
 }
