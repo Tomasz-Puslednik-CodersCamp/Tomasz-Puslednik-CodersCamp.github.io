@@ -1,0 +1,75 @@
+/* Import krojów pisma */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif|VT323&display=swap');
+
+/* Najogólniejsza konfiguracja strony */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Najogólniejsza konfiguracja krojów pisma */
+h1 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 24pt;
+}
+
+h2 {
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 18pt;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 12pt;
+}
+
+/* Konfiguracja CSS Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 8pt;
+    padding: 8pt 8pt;
+}
+
+.item-header {
+    grid-column: 1 / span 6;
+    grid-row: auto;
+    padding: 8pt 8pt;
+    border-style: solid;
+    border-width: 2pt;
+}
+
+.item-header h1 {
+    font-family: 'VT323', monospace;
+    font-size: 48pt;
+    font-weight: normal;
+    text-align: center;
+}
+
+.item-header p {
+    font-family: 'VT323', monospace;
+    font-size: 24pt;
+    font-weight: normal;
+}
+.item-section {
+    grid-column: 1 / span 1;
+    grid-row: auto;
+    padding: 8pt 8pt;
+}
+
+.item-content {
+    grid-column: 2 / span 5;
+    grid-row: auto;
+    padding: 8pt 8pt;
+}
+
+.item-footer {
+    grid-column: 1 / span 6;
+    grid-row: auto;
+    padding: 8pt 8pt;
+}
+
+.item-footer p {
+    font-size: 8pt;
+    text-align: center;
+}
