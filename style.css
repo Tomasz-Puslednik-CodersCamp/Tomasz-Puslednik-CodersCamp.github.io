@@ -31,43 +31,24 @@ p, a, em {
     padding: 8pt 8pt;
 }
 
-.item-header {
-    grid-column: 1 / span 6;
-    grid-row: auto;
-    padding: 8pt 8pt;
-    border-style: solid;
-    border-width: 2pt;
-}
-
-.item-footer {
-    grid-column: 1 / span 6;
-    grid-row: auto;
-    padding: 8pt 8pt;
-}
-
-.item-section {
-    grid-column: 1 / span 6;
-    grid-row: auto;
-    padding: 8pt 8pt;
-}
-
-.item-content {
+.item-header, .item-footer, .item-section, .item-content {
     grid-column: 1 / span 6;
     grid-row: auto;
     padding: 8pt 8pt;
 }
     
+.item-header {
+    border-style: solid;
+    border-width: 2pt;
+}
+
 @media (min-width: 1024px) {
     .item-section {
         grid-column: 1 / span 1;
-        grid-row: auto;
-        padding: 8pt 8pt;
     }
 
     .item-content {
         grid-column: 2 / span 5;
-        grid-row: auto;
-        padding: 8pt 8pt;
     }
 }
 
@@ -78,58 +59,51 @@ p, a, em {
     text-align: center;
 }
 
-.item-header h1 span:nth-child(0) {
+.item-header h1 span {
     animation: drop-from-above 1s ease-in-out;
+}
+
+.item-header h1 span:nth-child(0) {
     animation-delay: 0ms;
 }
 
 .item-header h1 span:nth-child(1) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 50ms;
 }
 
 .item-header h1 span:nth-child(2) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 100ms;
 }
 
 .item-header h1 span:nth-child(3) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 150ms;
 }
 
 .item-header h1 span:nth-child(4) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 200ms;
 }
 
 .item-header h1 span:nth-child(5) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 250ms;
 }
 
 .item-header h1 span:nth-child(6) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 300ms;
 }
 
 .item-header h1 span:nth-child(7) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 350ms;
 }
 
 .item-header h1 span:nth-child(8) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 400ms;
 }
 
 .item-header h1 span:nth-child(9) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 450ms;
 }
 
 .item-header h1 span:nth-child(10) {
-    animation: drop-from-above 1s ease-in-out;
     animation-delay: 500ms;
 }
 
